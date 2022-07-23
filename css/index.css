@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  height: 650px;
+  background-size: cover;
+}
+.flex-menu {
+  display: table;
+  /* flex-direction: column; */
+  margin: center;
+  flex: 1;
+  border: 1px solid green;
+}
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.flex-idea {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid blue;
+}
+.flex-detail {
+  display: block;
+  flex-direction: column;
+  flex: 3;
+  border: 1px solid blue;
+}
+.img {
+  height: 15%;
+  width: 30%;
+  text-align: center;
+  border-color: grey;
+  border-radius: 50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* 全屏高度 */
+  overflow: auto; /* 如果导航栏选项多，允许滚动 */
+}
+li {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+a {
+  display: block;
+  width: 250px;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
