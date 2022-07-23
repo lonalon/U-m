@@ -1,12 +1,11 @@
 body {
   display: flex;
-  height: 650px;
+  height: 490px;
   background-size: cover;
 }
 .flex-menu {
-  display: table;
-  /* flex-direction: column; */
-  margin: center;
+  display: block;
+  text-align: center;
   flex: 1;
   border: 1px solid green;
 }
@@ -16,8 +15,9 @@ body {
   flex: 5;
 }
 .flex-idea {
-  display: flex;
+  display: block;
   flex-direction: column;
+  text-align: center;
   flex: 1;
   border: 1px solid blue;
 }
@@ -43,8 +43,11 @@ ul {
 }
 li {
   width: 100%;
+  height: 50px;
   text-align: center;
+  padding: 0px auto 0px 10px;
   font-size: 20px;
+  background-color: hsl(blue, 50%, 100%);
 }
 a {
   display: block;
@@ -53,4 +56,15 @@ a {
 li a:hover {
   background-color: #555;
   color: white;
+}
+.p-idea {
+  font-size: 25px;
+  color: blue;
+}
+iframe {
+  height: 400px;
+  width: 100%;
+}
+table {
+  text-align: center;
 }
