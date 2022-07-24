@@ -1,13 +1,14 @@
 body {
   display: flex;
-  height: 490px;
+  height: 625px;
   background-size: cover;
 }
 .flex-menu {
   display: block;
-  text-align: center;
   flex: 1;
+  text-align: center;
   border: 1px solid green;
+  border-right: 0px;
 }
 .flex-content {
   display: flex;
@@ -17,28 +18,31 @@ body {
 .flex-idea {
   display: block;
   flex-direction: column;
-  text-align: center;
+  flex-wrap: wrap;
   flex: 1;
-  border: 1px solid blue;
+  text-align: center;
+  border: 1px solid green;
+  border-bottom: 0px;
 }
 .flex-detail {
   display: block;
   flex-direction: column;
   flex: 3;
-  border: 1px solid blue;
-}
-.img {
-  height: 15%;
-  width: 30%;
   text-align: center;
-  border-color: grey;
+  align-items: center;
+  border: 1px solid green;
+}
+img {
+  max-width: 45%;
+  height: auto;
+  text-align: center;
+  border-color: 10px grey;
   border-radius: 50%;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 100%; /* 全屏高度 */
   overflow: auto; /* 如果导航栏选项多，允许滚动 */
 }
 li {
@@ -49,22 +53,19 @@ li {
   font-size: 20px;
   background-color: hsl(blue, 50%, 100%);
 }
-a {
+.a-menu {
   display: block;
   width: 250px;
 }
 li a:hover {
-  background-color: #555;
+  background-color: rgb(104, 104, 196);
   color: white;
 }
 .p-idea {
   font-size: 25px;
   color: blue;
 }
-iframe {
-  height: 400px;
-  width: 100%;
-}
 table {
+  margin: 0 auto;
   text-align: center;
 }
