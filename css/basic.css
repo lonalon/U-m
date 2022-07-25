@@ -1,4 +1,19 @@
-.rush {
-    display: block;
-    flex-direction: column;
+div {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+table {
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+    /* border-collapse: collapse;
+    合并表格边框 */
+    margin-bottom: 70px;
+}
+
+tr td {
+    height: 50px;
+    padding-right: 80px;
 }

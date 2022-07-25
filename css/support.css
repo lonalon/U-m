@@ -1,4 +1,10 @@
-.rush {
-    display: block;
-    flex-direction: column;
+div {
+    color: orange;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #289cd2;
 }
