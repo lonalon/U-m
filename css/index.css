@@ -125,5 +125,15 @@ li a:hover {
 }
 
 table {
-  margin: 0 auto;
+  color: orange;
+  font-size: large;
+  font-weight: bold;
+  border-collapse: collapse;
+  margin-bottom: 70px;
+}
+
+tr td {
+  /* border: 1px solid #289cd2; */
+  height: 50px;
+  padding-right: 80px;
 }
