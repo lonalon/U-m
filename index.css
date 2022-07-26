@@ -63,8 +63,10 @@
 
 .nickname {
   font-weight: normal;
+  width: 250px;
   font-size: larger;
   margin: 0;
+  color: #289cd2;
 }
 
 ul {
