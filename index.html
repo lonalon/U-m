@@ -8,9 +8,27 @@
   <title>U&m</title>
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="icon" href="./img/logo.ico" type="image/x-icon">
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();// 在小于10的数字前加一个‘0’
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+      t = setTimeout(function () { startTime() }, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i;
+      }
+      return i;
+    }
+  </script>
 </head>
 
-<body background="./img/background.jpg" class="glass body-main">
+<body onload="startTime()" background="./img/background.jpg" class="glass body-main">
   <nav class="flex-menu">
     <a href="./intro.html" target="iframe" class="a-menu">
       <img class="portrait" src="./img/portrait.jpg" alt="portrait肖像" />
@@ -25,7 +43,7 @@
   </nav>
   <div class="flex-content">
     <div class="flex-idea">
-      <p class="p-idea">小组件预留位</p>
+      <p id="txt" class="p-idea">小组件预留位</p>
     </div>
     <main id="rush" class="flex-detail">
       <iframe title="main" src="intro.html" frameborder="0" name="iframe"></iframe>
