@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="../index.css">
+<div class="div-start">
+    <button class="accordion">freeCodeCamp练习项目</button>
+    <div class="panel">
+        <a href="../IOT-history/index.html" target="_blank">IOT-history</a>
+    </div>
+
+    <button class="accordion">待定 1</button>
+    <div class="panel">
+        <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+    </div>
+
+    <button class="accordion">待定 2</button>
+    <div class="panel">
+        <p>菜鸟教程 -- 学的不仅是技术，更是梦想！！！</p>
+    </div>
+</div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
